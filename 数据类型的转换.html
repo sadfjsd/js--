@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 一.转换为字符型
+        //1.把数字类转换为字符串型 变量.toString()
+        var num = 10;
+        var str = num.toString();
+        console.log(str);
+        console.log(typeof str);
+        //2.我们利用String(变量);
+        console.log(String(num));
+        //3.利用 + 拼接字符串的方法实现转换效果 隐式转换
+        console.log(num + '');
+        //toString()和String()使用方法不一样
+        //三种转换方式.我们更喜欢用第三种加号拼接字符串转换方式.这是一种方式也称之为隐式转换
+
+        //二.转换为数字型
+        var age = prompt('请输入你的年龄');
+        //1.parseInt(变量) 可以把字符型转换为数字型 得到是整数
+        console.log(parseInt(age));
+        console.log(parseInt(3.14));//3取整
+        console.log(parseInt('120px'));//120会去掉这个px单位
+        console.log(parseInt('rem120px'));//NaN
+        //2.parseFloat(变量)可以把字符型的转换为数字型 可以得到小数 浮数点
+        console.log(parseFloat(3.14));
+        console.log(parseFloat('120px'));//120会去掉这个px单位
+        console.log(parseFloat('rem120px'));//NaN
+        //3.利用Number(变量)
+        var str='123';
+        console.log(Number(str));
+        console.log(Number('12'));
+        //4.利用了算术运算 - * / 隐式转换
+        console.log('12'-0);//12
+        console.log('123'*'1');//123
+        console.log('123'/'1')//123
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

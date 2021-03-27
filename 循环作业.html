@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.求1-100之间所有数的总和与平均值
+        var sum = 0;
+        var j = 1;
+        do {
+           sum += j
+           j++;
+        }while(j<=100)
+        console.log(sum)
+        console.log(sum/100)
+        //2.求100以内7的倍数和
+      var sum = 0
+      for (var i = 1; i<=100; i++){
+          if (i % 7 !==0){
+              continue;
+          }
+          sum += i
+      }
+      console.log(sum);
+      //3.求出1~100之间所有偶数和
+      var sum = 0
+      for (var i = 1; i<=100;i++){
+          if(i % 2 !== 0){
+              continue
+          }
+          sum += i
+      }
+      console.log(sum);
+      //4.使用for循环打印矩形.要求每次只能输出一个⭐
+      var str = '';
+      for ( var i = 1; i<=7;i++){
+          for(var j = 1; j<=5;j++){
+              str=str+'⭐';
+          }
+          str = str +'\n'
+      }
+      console.log(str);
+      //5.使用for打印三角形⭐
+     var str = '';
+     for(var i =1; i<=10;i++){
+         for(var j = 1; j<=i;j++){
+             str = str +'⭐'
+         }
+         str += '\n'
+     }
+     console.log(str)
+     //6.使用for循环打印99乘法表
+     var str = '';
+        for (var i = 1; i <= 9; i++){
+            for (var j = 1; j <= i; j++){
+             str += j + 'x' + i + '='+ j * i + '\t';
+            }
+            str = str +'\n'
+        }
+        console.log(str)
+        //7.接受用户输入的用户名和密码，若用户名为'admin'密码为'123456' 则提示用户成功 否则 让用户一直输入.
+     var myname =prompt('请输入你的用户名')
+     while(myname !== 'admin'){
+         myname = prompt('用户名不正确请重新输入用户名')
+     }
+     var num = prompt('请输入你的密码')
+     while(num !== '123456'){
+         num = prompt('密码不正确请重新输入你的密码')
+     }
+     alert('密码正确退出循环')
+     //8.求出整数1~100的累加值但要求跳过所有个数为3的数
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
